@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # intercambio-libros
 
 ## Project setup
@@ -17,3 +18,6 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# intercambio-libros
+>>>>>>> e0c1c5fcd740806d2e7fe21cd445081ccf24cb6b
