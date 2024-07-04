@@ -1,0 +1,87 @@
+#app {
+  font-family: 'Mulish', sans-serif;
+  background: url("~@/assets/images/images (1).jpg") no-repeat center center fixed;
+  background-color: #E6E3DD;
+  /* Color de fondo de respaldo */
+  background-size: cover;
+  /* Ajuste para cubrir todo el contenedor */
+  min-height: 100vh;
+  /* Mínimo alto de la ventana */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: #30190b;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  /* Alinear elementos a los lados opuestos */
+  align-items: center;
+  /* Centrar verticalmente */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  align-items: center; /* Alinea los elementos verticalmente */
+  width: 100%;
+}
+
+nav a {
+  color: #F5F4F2;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: color 0.3s; 
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+nav a:hover {
+  color: #42b983; 
+}
+
+
+main {
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 15px;
+  color: #E6E3DD;
+  flex-direction: column;
+
+}
+
+footer {
+  background-color: #30190b;
+  color: #F5F4F2;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

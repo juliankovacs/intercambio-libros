@@ -66,6 +66,7 @@ export default {
           author: this.author,
           genre: this.genre,
           imageUrl: imageUrl,
+          userId: userId, // Guardar el userId del usuario que subió el libro
           userEmail: userEmail // Guardar el email del usuario que subió el libro
         });
 
@@ -74,73 +75,13 @@ export default {
         this.author = "";
         this.genre = "";
         this.file = null;
+        this.$router.push('/home'); 
       } catch (error) {
-        alert(error.message);
+        alert(`Error al registrar el libro: ${error.message}`);
       }
     }
   }
 };
 </script>
 
-
-<style scoped>
-.register-book {
-  width: 375px;
-  padding: 20px;
-  background: #E6E3DD;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.register-title {
-  width: 100%;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 45px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 40px;
-}
-
-.input-wrapper {
-  width: 100%;
-  margin-bottom: 20px;
-  background: #F5F4F2;
-  border-radius: 31.5px;
-  display: flex;
-  align-items: center;
-}
-
-input[type="text"], input[type="file"] {
-  width: calc(100% - 28px);
-  margin: 0 14px;
-  padding: 10px 0;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #241C1C;
-  border: none;
-  background: transparent;
-}
-
-button {
-  width: 100%;
-  height: 63px;
-  background: #241C1C;
-  border-radius: 31.5px;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  color: #F5F4F2;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-button:hover {
-  background-color: #130f0f;
-}
-</style>
+<style scoped lang="css" src="@/assets/styles/registrarlibro-styles.css"> </style>

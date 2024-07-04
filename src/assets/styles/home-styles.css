@@ -1,0 +1,288 @@
+.home-container {
+    font-family: 'Mulish', sans-serif;
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-message {
+    color: #E6E3DD;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.search-books-container {
+    margin-top: 20px;
+    /* Espacio superior del contenedor de búsqueda */
+}
+
+.search-books-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Espacio inferior del encabezado de búsqueda */
+}
+
+.libros-disponibles {
+    margin: 0;
+    /* Ajusta el margen del título según tu diseño */
+    font-size: 24px;
+    /* Tamaño de fuente del título */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 31.5px;
+}
+
+.search-container button.search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 31.5px;
+    background-color: #30190b;
+    color: #E6E3DD;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button.search-button:hover {
+    background-color: #130f0f;
+    /* Color de fondo del botón al hacer hover */
+}
+
+
+.a{
+    color: #F5F4F2;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: color 0.3s; 
+}
+
+.a:hover{
+    color: #42b983;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #E6E3DD;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.logout-button:hover {
+    color: #c9302c;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    background: #30190b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 400px; /* Ajusta según sea necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.book img {
+    width: 150px;
+    height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+
+.book .book-details {
+    flex-grow: 1;
+}
+
+.book h3,
+.book p {
+    color: #E6E3DD;
+}
+
+.search-container button.search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 31.5px;
+    background-color: #30190b;
+    color: #E6E3DD;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button.search-button:hover {
+    background-color: #130f0f;
+}
+
+.book button.exchange-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #E6E3DD;
+    color: #130f0f;
+    border: none;
+    cursor: pointer;
+    border-radius: 31.5px;
+}
+
+.book button.exchange-button:hover {
+    background-color: #c3afaf;
+}
+
+.book-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.book button.delete-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #c9302c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 31.5px;
+}
+
+.book button.delete-button:hover {
+    background-color: #a82d26;
+}
+
+.book button.edit-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #E6E3DD;
+    color: #130f0f;
+    border: none;
+    cursor: pointer;
+    border-radius: 31.5px;
+    margin-right: 10px;
+}
+
+.book button.edit-button:hover {
+    background-color: #c3afaf;
+}
+
+.registrar-libro-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #30190b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    border-radius: 31.5px;
+}
+
+.registrar-libro-link:hover {
+    background-color: #130f0f;
+}
+
+
+main {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 15px;
+    color: #E6E3DD;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1,
+h2 {
+    color: #42b983;
+    text-shadow: -1px -1px 0 #30190b, 1px -1px 0 #30190b, -1px 1px 0 #30190b, 1px 1px 0 #30190b;
+}
+
+.exchange-requests-container {
+    margin-top: 20px;
+    /* Espacio superior del contenedor de solicitudes */
+    text-align: center;
+  }
+  
+  .exchange-requests-container h2 {
+    color: #42b983;
+    text-shadow: -1px -1px 0 #30190b, 1px -1px 0 #30190b, -1px 1px 0 #30190b, 1px 1px 0 #30190b;
+    font-size: 24px;
+    /* Tamaño de fuente del título */
+  }
+  
+  .exchange-request {
+    background-color: #30190b;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .exchange-request p {
+    color: #e6e3dd;
+    margin: 0;
+  }
+  
+  .exchange-request-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .exchange-request-buttons button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 31.5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .exchange-request-buttons button.accept-button {
+    background-color: #42b983;
+    color: #e6e3dd;
+  }
+  
+  .exchange-request-buttons button.accept-button:hover {
+    background-color: #3a8f6b;
+  }
+  
+  .exchange-request-buttons button.reject-button {
+    background-color: #c9302c;
+    color: #ffffff;
+  }
+  
+  .exchange-request-buttons button.reject-button:hover {
+    background-color: #a82d26;
+  }
+  
